@@ -9,7 +9,7 @@
 
 ## when is safe to do a rebase and when to do a merge
 
-  Merges don't change the history of a branch so it's always safe to do a merge, but the history gets messy.
+  * Merges don't change the history of a branch so it's always safe to do a merge, but the history gets messy.
 
   * It's safe to do a rebase when you are the only person working on a branch and in the part of the history you are rewriting there aren't any merge commits.
 
@@ -22,7 +22,7 @@
   git fetch origin/master && git rebase origin/master
   ```
 
-## To rewrite the history
+  * To rewrite the history
 
   ```
   git log --oneline # find the first commit in the range you want to edit
